@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    .marquee {
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
+<body>
+    <main class="bg-gradient-to-r from-purple-500 to-pink-500 w-full text-white font-poppins h-[100vh]">
+
+        <!-- nav part -->
+
+        <nav class="w-full flex justify-between items-center px-[7vh] py-2.5 border-b absolute top-0">
+            <div class=" font-serif font-extrabold text-[30px] pl-6">
+                <a href="#" class="flex items-center">
+                    <p class="text-[#FFDEE9]"><span class="text-[#580f41]">TO</span>DONE</p>
+                    <p></p><img
+                        src="https://imgs.search.brave.com/qIcPYofOnj0Kt-wh2P6p9mbQa9SDegkV4g_JPxa4lwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzJhL0Jhc2ljX05v/dGVib29rLnN2Zw"
+                        alt="" class="w-[50px] h-[40px]"></p>
+                </a>
+            </div>
+            <div class="flex items-center font-Basis Grotesque Arabic Pro
+            text-[14px] pr-8">
+                <button class="ml-6 h-[26px] text-sm text-white bg-[#a52c7f] hover:bg-[#680f41] px-4 pt-1 pb-2 rounded-lg hover:translate-y-0.5 transition-transform ">Get Started</button>
+            </div>
+        </nav>
+
+        <!-- hero part -->
+
+        <div class="w-full px-[4vw] pb-0 mb-0">
+            <div class="w-full border-x-[2px] flex justify-between items-start pt-[5.5vw]">
+
+                <!-- text part -->
+
+                <div class="pl-10 pt-20 w-[50%]">
+                    <div class="text-[70px] leading-none font-soulmaze font-extrabold">
+                        Stay Organized<br>
+                        <img src="rectangle.svg" alt="" class="inline-block leading-0">with Our<br>
+                        To-Do List
+                    </div>
+                    <div class="pt-4 text-[19px] opacity-80">Make life easier for you and your team with the best to-do list website.
+                    </div>
+                    <div class="pt-6 flex gap-8">
+                        <button class="ml-6 h-[26px] text-sm  bg-[#a52c7f] hover:bg-[#680f41] px-4 pt-1 pb-2 flex gap-2 rounded-lg hover:translate-y-0.5 transition-transform">Get Started
+                            <img src="arrow.svg" alt="" class="pt-1">
+                        </button>
+                        <button class="opacity-35">Know More</button>
+                    </div>
+                </div>
+
+                <!-- img part -->
+
+                <div class="overflow-hidden w-[50%]">
+                    <img src="base.svg" alt="" class="w-[70vw] h-[39.25vw] ml-20">
+                </div>
+            </div>
+        </div>
+
+        <!-- Marquee section -->
+
+        <div class="w-full overflow-hidden">
+            <div class="w-[200vw] marquee flex">
+                <div class="w-[50%] bg-[#C568DE] p-3 flex justify-around text-xl font-extrabold">
+                    <h1>Tasks</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Plan</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Checklist</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Steps</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Priorities</h1>
+                </div>
+                <div class="w-[50%] bg-[#C568DE] p-3 flex justify-around text-xl font-extrabold">
+                    <h1>Tasks</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Plan</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Checklist</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Steps</h1>
+                    <img src="star.svg" alt="">
+                    <h1>Priorities</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
