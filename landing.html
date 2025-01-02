@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <main class="bg-gradient-to-r from-purple-500 to-pink-500 w-full text-white font-poppins h-[100vh]">
+    <main
+        class="bg-gradient-to-r from-purple-500 to-pink-500 w-full text-white font-poppins min-h-[100vh] flex flex-col">
         <div class="flex">
             <div
-                class=" max-w-[540px] text-black w-full bg-white pt-[20px] mx-auto mb-[20px] px-[30px] pb-[40px] rounded-lg shadow-lg mt-[30px]">
+                class="max-w-[540px] text-black w-full bg-white pt-[20px] mx-auto mb-[20px] px-[30px] pb-[40px] rounded-lg shadow-lg mt-[30px]">
                 <h2 class="flex items-center font-extrabold text-[20px]">TO-DO List
                     <img src="https://imgs.search.brave.com/qIcPYofOnj0Kt-wh2P6p9mbQa9SDegkV4g_JPxa4lwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzJhL0Jhc2ljX05v/dGVib29rLnN2Zw"
                         alt="" class="w-[50px] h-[40px] ml-2">
@@ -21,22 +22,36 @@
                     <input id="input-box" class="flex-1 outline-none border-none
                     w-[420px] bg-transparent pl-5" type="text" placeholder="Add Your task">
                     <button onclick="AddTask()"
-                        class="bg-purple-500 border-none outline-none cursor-pointer text-white rounded-2xl px-[50px] py-[5px]">Add</button>
+                        class="bg-pink-500 hover:bg-pink-700 border-none outline-none cursor-pointer text-white rounded-2xl px-[50px] py-[5px]">Add</button>
                 </div>
             </div>
         </div>
 
-        <div class="grid grid-cols-3 px-12 gap-5">
-            <div class="border border-black max-h-full">
-                <ul id="list-container"
-                    class="list-none text-[20px] pt-[12px] pr-[8px] pb-[12px] pl-[30px] user-select-none cursor-pointer space-y-2">
+        <div class="grid grid-cols-3 px-12 gap-5 flex-grow">
+            <div class="border border-black rounded-lg max-h-full p-4">
+                <h3 class="text-lg font-bold mb-4">To-Do</h3>
+                <ul id="list-container" class="list-none space-y-2 min-h-[200px] max-h-[200px] overflow-y-auto pr-4">
                 </ul>
             </div>
-            <div class="border border-black max-h-full"></div>
-            <div class="border border-black h-auto"></div>
+            <div id="in-progress" class="border border-black rounded-lg max-h-full p-4">
+                <h3 class="text-lg font-bold mb-4">In Progress</h3>
+                <ul class="list-none space-y-2 min-h-[200px] max-h-[200px] overflow-y-auto pr-4"></ul>
+            </div>
+            <div id="done" class="border border-black rounded-lg max-h-full p-4">
+                <h3 class="text-lg font-bold mb-4">Done</h3>
+                <ul class="list-none space-y-2 min-h-[200px] max-h-[200px] overflow-y-auto pr-4"></ul>
+            </div>
         </div>
 
+        <div class="text-center mt-6 mb-2">
+            <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-1 px-5 rounded-lg text-lg transition"
+                onclick="window.location.href='index.html';">
+                Home
+            </button>
+
+        </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 
