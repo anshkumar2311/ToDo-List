@@ -68,6 +68,7 @@ function AddTask() {
 
     // Append to the To-Do container
     todoContainer.appendChild(taskElement);
+    // alert(`task added successfully`)
 
     // Clear input box
     inputBox.value = '';
