@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <main class="bg-gradient-to-r from-purple-500 to-pink-500 w-full text-white font-poppins h-[100vh]">
+        <div class="flex">
+            <div
+                class=" max-w-[540px] text-black w-full bg-white pt-[20px] mx-auto mb-[20px] px-[30px] pb-[40px] rounded-lg shadow-lg mt-[30px]">
+                <h2 class="flex items-center font-extrabold text-[20px]">TO-DO List
+                    <img src="https://imgs.search.brave.com/qIcPYofOnj0Kt-wh2P6p9mbQa9SDegkV4g_JPxa4lwo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzJhL0Jhc2ljX05v/dGVib29rLnN2Zw"
+                        alt="" class="w-[50px] h-[40px] ml-2">
+                </h2>
+                <div class="flex mt-5 border-[2px] rounded-2xl">
+                    <input id="input-box" class="flex-1 outline-none border-none
+                    w-[420px] bg-transparent pl-5" type="text" placeholder="Add Your task">
+                    <button onclick="AddTask()"
+                        class="bg-purple-500 border-none outline-none cursor-pointer text-white rounded-2xl px-[50px] py-[5px]">Add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 px-12 gap-5">
+            <div class="border border-black max-h-full">
+                <ul id="list-container"
+                    class="list-none text-[20px] pt-[12px] pr-[8px] pb-[12px] pl-[30px] user-select-none cursor-pointer space-y-2">
+                </ul>
+            </div>
+            <div class="border border-black max-h-full"></div>
+            <div class="border border-black h-auto"></div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
